@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"live_box\startup_stm32f103xb.o"
+"live_box\main.o"
+"live_box\gpio.o"
+"live_box\dma.o"
+"live_box\tim.o"
+"live_box\stm32f1xx_it.o"
+"live_box\stm32f1xx_hal_msp.o"
+"live_box\stm32f1xx_hal_gpio_ex.o"
+"live_box\stm32f1xx_hal_tim.o"
+"live_box\stm32f1xx_hal_tim_ex.o"
+"live_box\stm32f1xx_hal.o"
+"live_box\stm32f1xx_hal_rcc.o"
+"live_box\stm32f1xx_hal_rcc_ex.o"
+"live_box\stm32f1xx_hal_gpio.o"
+"live_box\stm32f1xx_hal_dma.o"
+"live_box\stm32f1xx_hal_cortex.o"
+"live_box\stm32f1xx_hal_pwr.o"
+"live_box\stm32f1xx_hal_flash.o"
+"live_box\stm32f1xx_hal_flash_ex.o"
+"live_box\stm32f1xx_hal_exti.o"
+"live_box\system_stm32f1xx.o"
+"live_box\ws2812b.o"
+"live_box\my_lib.o"
+--strict --scatter "live_box\live_box.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "live_box.map" -o live_box\live_box.axf

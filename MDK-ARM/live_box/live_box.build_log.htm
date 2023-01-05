@@ -1,0 +1,78 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Even Zhang, c, LIC=QF82M-XPG1K-8TP3P-M0ZWZ-N60JM-50Q9F
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.21a
+Toolchain Path:  D:\RoboMaster\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DCM.DLL V1.13.8.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.14.0
+ 
+<h2>Project:</h2>
+F:\DIY\STM32Projects\F103C8T6\live_box\MDK-ARM\live_box.uvprojx
+Project File Date:  12/22/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\RoboMaster\Keil5\ARM\ARMCC\Bin'
+Build target 'live_box'
+compiling my_lib.c...
+..\bsp\modules\my_lib.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\bsp\modules\my_lib.c(29): warning:  #940-D: missing return statement at end of non-void function "Sin_Series"
+  }
+..\bsp\modules\my_lib.c: 2 warnings, 0 errors
+compiling main.c...
+../bsp/modules/my_lib.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/main.c(95): warning:  #177-D: variable "i" was declared but never referenced
+  	int i = 0;
+../Core/Src/main.c(97): warning:  #177-D: variable "ranbow" was declared but never referenced
+  	uint8_t ranbow[7][3] = {{200,0,0},{200,135,0},{200,200,0},{0,200,0},{0,200,200},{0,0,200},{109,0,200}};
+../Core/Src/main.c(100): warning:  #177-D: variable "test2_img" was declared but never referenced
+  	uint8_t test2_img[16][16][3] = {
+../Core/Src/main.c(122): warning:  #177-D: variable "x" was declared but never referenced
+  	uint8_t x = 0 ,y = 0,num = 0;
+../Core/Src/main.c(122): warning:  #177-D: variable "y" was declared but never referenced
+  	uint8_t x = 0 ,y = 0,num = 0;
+../Core/Src/main.c(122): warning:  #177-D: variable "num" was declared but never referenced
+  	uint8_t x = 0 ,y = 0,num = 0;
+../Core/Src/main.c(123): warning:  #177-D: variable "nocolor" was declared but never referenced
+  	uint8_t nocolor[3] = {0,0,0};
+../Core/Src/main.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=5668 RO-data=1100 RW-data=824 ZI-data=19440  
+FromELF: creating hex file...
+"live_box\live_box.axf" - 0 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\DIY\STM32Projects\F103C8T6\live_box\MDK-ARM\RTE
+  D:\RoboMaster\Keil5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\RoboMaster\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
